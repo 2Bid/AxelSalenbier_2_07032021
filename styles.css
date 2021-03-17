@@ -1,15 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap');
 
 body{
      margin: 0;
      padding: 0;
-     font-family: Raleway
+     font-family: 'Raleway','sans-serif';
+     box-sizing: border-box;
+}
+.color-blue{
+     color: #0065FC !important ;
+     border-top: 4px solid #0065FC;
 }
 img{
      object-fit: cover
 }
 .container{
-     padding: 0 25px 0 25px;
+     padding: 0 45px 0 45px;
      max-width: 1440px;
      margin: auto;
 }
@@ -39,6 +44,7 @@ header nav ul li a{
      text-decoration: none;
      color: black !important;
      padding: 33px 0 0 0;
+     font-weight: bold;
 }
 header nav ul li a:hover{
      color: #0065FC !important;
@@ -58,10 +64,9 @@ header nav ul li:last-child a{
     font-weight: 800;
     font-size: 2rem;
     padding-top: 30px;
-    line-height: 0px;
+    line-height: 30px;
 }
 .nav-section p{
-     line-height: 15px;
      padding-bottom: 20px;
      color: gray;
 }
@@ -72,8 +77,8 @@ header nav ul li:last-child a{
      height: 47px;
 }
 .input i{
-     width: 47px;
      height: 47px;
+     width: 47px;
      background-color: #f2f2f2;
      border-radius: 20px 0 0 20px;
      display: flex;
@@ -99,6 +104,7 @@ header nav ul li:last-child a{
 .filtres{
      display: flex;
      margin-top: 50px;
+     flex-wrap: wrap;
 }
 .filtres h4{
      padding-right: 20px;
@@ -112,9 +118,10 @@ header nav ul li:last-child a{
      justify-content: center;
      align-items: center;
      height: 60px;
-     border: 1px solid black;
+     border: 3px solid #f2f2f2;
      border-radius: 50px;
      margin-right: 40px;
+     margin-bottom: 25px;
 }
 
 .tag i{
@@ -136,19 +143,18 @@ header nav ul li:last-child a{
 .information {
      font-weight: 200;
      display: flex;
-     justify-content: space-between;
-     width: 35%;
      margin-top: 30px;
 }
-.information i {
-     margin-top: -8px;
+.information-icone {
+     margin-top: 9px;
+     margin-right: 15px;
 }
 .tag h4{
      margin-right: 10px;
      padding-left: 20px;
 }
 .tag i {
-     margin: -1.7px 0 -1.5px -2px;
+     margin: -1px 0 -1px -1px;
 }
 /* MAIN */ 
 .main{
@@ -164,7 +170,7 @@ header nav ul li:last-child a{
      justify-content: center;
      flex-direction: column;
      border-radius: 20px;
-     padding: 0 15px 0 15px;
+     padding: 0 5px 0 5px;
      height: auto;
      width: 62%;
      
@@ -197,7 +203,7 @@ header nav ul li:last-child a{
      border-radius: 25px;
      text-align: left;
      width: 100%;
-     box-shadow: 2px 2px 10px gray;
+     box-shadow: 2px 2px 10px darkgrey;
 }
 .img-container{
      display: flex;
@@ -207,9 +213,9 @@ header nav ul li:last-child a{
 .heberg-item-img{
      object-fit: cover;
      padding-top: 4px;
-     width: 95%;
+     width: 96%;
      height: 110px;
-     border-radius: 20px 20px 0 0 ;
+     border-radius: 22px 22px 0 0 ;
      
 }
 .heberg-content{
@@ -261,7 +267,7 @@ header nav ul li:last-child a{
      width: 90%;
      margin-top: 30px;
      background-color: white;
-     box-shadow: 2px 2px 10px gray;
+     box-shadow: 2px 2px 10px darkgray;
      line-height: 0.2rem;
 }
 .img-container2{
@@ -276,7 +282,7 @@ header nav ul li:last-child a{
      width: 100%;
      object-fit: cover;
      height: 110px;
-     border-radius: 20px 0 0 20px;
+     border-radius: 18px 0 0 18px;
 }
 .populaire-content{
      width: 60%;
@@ -287,16 +293,25 @@ header nav ul li:last-child a{
 
 /****                     ACTIVITES                  ******/ 
 .activites-section{
-     margin-top: 100px;
+     margin-top: 60px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
 }
 .activites-section h3{
-     font-size: 20px;
-     font-weight: bold;
+     font-size: 25px;
+     font-weight: bolder;
+     margin-bottom: 40px;
 
+}
+.activites-h3{
+     width: 100%;
 }
 .activites-section h4{
      font-size: 18px;
      font-weight: bold;
+     
 
 }
 .activites-grid{
@@ -305,7 +320,7 @@ header nav ul li:last-child a{
      grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
     grid-template-rows: 150px 20px 20px 20px 150px;
      grid-gap: 20px;
-     margin-left: 4px;
+     justify-content: center;
 }
 .activites-item{
      display: flex;
@@ -314,7 +329,7 @@ header nav ul li:last-child a{
      overflow: hidden;
      border-radius: 15px;
      height: 100%;
-     box-shadow: 2px 2px 10px gray;
+     box-shadow: 2px 2px 10px darkgray;
 }
 .img-wrapper{
      position: relative;
@@ -374,7 +389,7 @@ footer{
      display: flex;
      background-color: #f2f2f2;
      justify-content: space-between;
-     margin-top: 20px;
+     margin-top: 50px;
      
 }
 .footer-container{
@@ -392,10 +407,239 @@ footer ul li {
      color:#505050;
 }
 
-@media screen and (max-width:1300px){
+@media screen and (max-width:1380px){
+     .input{
+     }
+     .main{
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+     }
+     .hebergements-section{
+          width: 100%
+     }
+
+     .populaire-section{
+          width: 100%;
+          margin: 10px 0 60px 0;
+     }
+     .populaire-container{
+          
+     }
+     .popu-item:last-child{
+          margin-bottom: 50px;
+     }
+
+     .heberg-grid{
+    
+          display: grid;
+          grid-template-columns: repeat(auto-fill, 300px);
+          justify-content: center;
+          grid-gap: 35px;
+     }
+
+     .activites-grid{
+          display: grid;
+          width: 100%;
+          grid-template-columns: 45% 45%;
+         grid-template-rows: 200px 200px 200px;
+          grid-gap: 20px;
+     }
+     .activites-item1{
+          grid-area: 2 / 1 / 2 / 1;
+     }
+     .activites-item2{
+          grid-area:  2 / 3 / 3 / 2;
+     }
+     .activites-item3{
+          grid-area: 3 / 1 / 6 / 2;
+     }
+     .activites-item4{
+          grid-area: 2 / 2 / 1 / 2;
+     }
+     .activites-item5{
+          grid-area: 1 / 1 / 2 / 1;
+     }
+     .activites-item6{
+          grid-area: 3  / 2 / 6 / 2;
+     }
+
 
 }
 
+
+
+
+
+
+
 @media screen and (max-width:700px){
+
+     header{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          position: relative;
+     }
+
+     header ul{
+          padding : 0;
+          width: 100%;
+     }
+     header ul li:first-child{
+          border-bottom: #0065FC 4px solid;
+          padding-bottom: 20px;
+     }
+     header ul li{
+          border-bottom: lightgray 4px solid;
+          width: 100%;
+          border-top: none;
+          text-align: center;
+     }
+     header ul li a:hover {
+          border-top: none  !important;
+     }
+     .color-blue{
+          border-top: 0;
+     }
+     header ul li:last-child{
+          position: absolute;
+          text-align: right;
+          top : 10px;
+          right:  0;
+          border: none;
+     }
+     header ul li a {
+     }
+     nav{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+     }
+     .nav-section h2{
+          line-height: 30px;
+          margin-top: 0;
+          margin-left: 20px;
+     }
+     .nav-section p{
+          margin-left: 20px;
+     }
+     .input{
+          width: 68%;
+          padding: 0;
+     }
+     .input span{
+          width: 33%;
+     }
+     .input i{
+          width: 50%;
+     }
+     .input button{
+          padding: 0;
+          width: 36%;
+     }
+     .filtres{
+          display: flex;
+          flex-wrap: wrap;
+     }
+     .filtres h4:first-child{
+          margin-right: 15px;
+          margin-left: 10px;
+     }
+     .filtres-tag{
+          width: 90%;
+     }
+     .tag{
+          margin: 10px 10px;
+          word-break:keep-all;
+     }
+     .tag h4{
+          
+     }
+     .information{
+          width: 100%;
+     }
+     .container{
+          padding: 0 0 0 0;
+     }
+     .populaire-section{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          border-radius : 0px 
+     }
+     .populaire-container{
+     }
+     .popu-item{
+          line-height: 16px;
+     }
+     .popu-item:last-child{
+          margin-bottom: 30px;
+     }
+     .popu-item h3{
+          margin : 5px 0
+     }
+     .hebergements-section{
+          background-color: white;
+          margin-bottom: 0;
+          width: 85%;
+     }
+     .hebergements-section h2{
+     text-align: center;
+     padding: 0;
+     }
+     .heberg-grid{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+     .heberg-item{
+          width: 100%;
+     }
+     .heberg-item-img{
+          object-fit: cover;
+          padding-top: 4px;
+          width: 98.2%;
+          height: 110px;
+          border-radius: 25px 25px 0 0 ;
+          
+     }
+     .afficher-plus{
+          padding: 30px 0 0 0;
+     }
+     .activites-section{
+          margin-bottom: 50px;
+          
+     }
+     .activites-section h3{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          font-size: 25px;
+          font-weight: bolder;
+          
+     }
+     .activites-grid{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 95%;
+     }
+     .activites-item{
+          height: 200px;
+          width: 100%;
+     }
      
+     
+     
+     
+     .footer-container{
+          display: flex;
+          flex-direction: column;
+          padding-left: 30px;
+     }
 }
