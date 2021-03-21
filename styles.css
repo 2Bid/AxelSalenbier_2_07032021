@@ -23,7 +23,7 @@ header{
      display: flex;
 }
 header h1{
-     margin: 20px 20px 20px 20px;
+     margin: 20px 0 0 40px;
      color: #0065FC;
      font-family: 'Raleway' , 'sans-serif';
 }
@@ -419,14 +419,14 @@ footer ul li {
      .hebergements-section{
           width: 100%
      }
-
+     .populaire-container{
+          padding-top: 0  !important;
+     }
      .populaire-section{
           width: 100%;
           margin: 10px 0 60px 0;
      }
-     .populaire-container{
-          
-     }
+     
      .popu-item:last-child{
           margin-bottom: 50px;
      }
@@ -444,7 +444,7 @@ footer ul li {
           width: 100%;
           grid-template-columns: 45% 45%;
          grid-template-rows: 200px 200px 200px;
-          grid-gap: 20px;
+          grid-gap: 25px;
      }
      .activites-item1{
           grid-area: 2 / 1 / 2 / 1;
@@ -464,15 +464,19 @@ footer ul li {
      .activites-item6{
           grid-area: 3  / 2 / 6 / 2;
      }
-
+     footer{
+          padding : 20px;
+          display : flex;
+          justify-content: space-between
+     }
+     .footer-container{
+          width: 100%;
+     }
 
 }
+/* FIN MEDIA TABLETTE */
 
-
-
-
-
-
+/* DEBUT MEDIA MOBILE */ 
 
 @media screen and (max-width:700px){
 
@@ -481,6 +485,10 @@ footer ul li {
           flex-direction: column;
           width: 100%;
           position: relative;
+     }
+
+     header h1{
+          margin: 20px 0 0 25px;
      }
 
      header ul{
@@ -528,20 +536,27 @@ footer ul li {
      .input{
           width: 68%;
           padding: 0;
+          margin-left: 30px;
+          border : none
      }
      .input span{
-          width: 33%;
+          width: 15%;
      }
      .input i{
-          width: 50%;
+          width: 100%;
+     }
+     .input h3{
+          width: 60%;
      }
      .input button{
           padding: 0;
           width: 36%;
+          margin-left: 20px;
      }
      .filtres{
           display: flex;
           flex-wrap: wrap;
+          margin-left: 20px;
      }
      .filtres h4:first-child{
           margin-right: 15px;
@@ -554,11 +569,11 @@ footer ul li {
           margin: 10px 10px;
           word-break:keep-all;
      }
-     .tag h4{
-          
-     }
      .information{
           width: 100%;
+     }
+     .information p {
+          margin-left:0
      }
      .container{
           padding: 0 0 0 0;
@@ -569,8 +584,7 @@ footer ul li {
           width: 100%;
           border-radius : 0px 
      }
-     .populaire-container{
-     }
+     
      .popu-item{
           line-height: 16px;
      }
@@ -596,6 +610,9 @@ footer ul li {
           justify-content: center;
           align-items: center;
      }
+     .hebergements-section h2{
+          text-align: left;
+     }
      .heberg-item{
           width: 100%;
      }
@@ -609,6 +626,7 @@ footer ul li {
      }
      .afficher-plus{
           padding: 30px 0 0 0;
+          margin: 0;
      }
      .activites-section{
           margin-bottom: 50px;
@@ -620,6 +638,7 @@ footer ul li {
           justify-content: center;
           font-size: 25px;
           font-weight: bolder;
+          margin: 0 0 30px 30px;
           
      }
      .activites-grid{
@@ -627,7 +646,7 @@ footer ul li {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          width: 95%;
+          width: 90%;
      }
      .activites-item{
           height: 200px;
@@ -640,6 +659,10 @@ footer ul li {
      .footer-container{
           display: flex;
           flex-direction: column;
-          padding-left: 30px;
+          padding-left: 20px;
+     }
+     .footer-container ul {
+          padding-left : 20px;
+          margin: 0
      }
 }
