@@ -85,11 +85,15 @@ header nav ul li:last-child a{
      align-items: center;
      cursor: pointer;
 }
-.input h3{
+.input input{
      font-weight: bolder;
+     border: none;
      font-size: 15px;
      margin-left: 20px;
      text-align: left;
+}
+.input input:focus{
+     outline: none;
 }
 .input button{
      border-radius: 0 15px 15px 0;
@@ -653,7 +657,7 @@ footer ul li {
           justify-content: center;
           align-items: center;
      }
-     .input h3{
+     .input input{
           margin-left : 0
      }
      .input button{
